@@ -1,0 +1,1 @@
+Worker: java ./src/main/java/stevebot/SteveBot.java
