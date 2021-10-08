@@ -21,7 +21,7 @@ public class SteveBot {
     
     //Main method
     public static void main(String[] args) throws LoginException {
-        String token = "ODk1OTA2MTU0Mjg1MjQ4NTUz.YV_XoA.nDbhQiUxITPboKBQ6Lm4QRrgv3E";
+        String token = System.getenv("TOKEN");
         builder = JDABuilder.createDefault(token);
         
         builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
